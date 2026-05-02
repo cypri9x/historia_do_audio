@@ -7,6 +7,10 @@ const presets = [
   { label: 'Palma', path: '/audios/palma.wav' },
   { label: 'Som constante de 440 Hz', path: '/audios/440hz.wav' },
   { label: "Tom's Diner - Suzanne Vega", path: '/audios/toms-diner.mp3' },
+  { label: 'Teste', path: '/audios/audio_teste.wav' },
+  { label: 'Acorde de Sol', path: '/audios/chord_G.wav' },
+  { label: 'Fala Humana 2', path: '/audios/fala_humana2.wav' },
+  { label: '440 Hz 2s', path: '/audios/tone-440hz-sine-2s.wav' },
 ]
 
 const compressionProfiles = {

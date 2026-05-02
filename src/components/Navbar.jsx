@@ -17,7 +17,7 @@ export default function Navbar() {
     <header className="navbar">
       <a className="brand" href="#inicio" aria-label="Ir para o início">
         <Music2 />
-        <span>Áudio Digital</span>
+        <span>Do Beat ao Bit</span>
       </a>
       <button className="nav-toggle" type="button" aria-label="Abrir menu" onClick={() => setOpen(!open)}>
         {open ? <X /> : <Menu />}

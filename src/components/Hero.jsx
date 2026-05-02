@@ -12,7 +12,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <p className="eyebrow">Trabalho USP</p>
-        <h1>História do Áudio na Computação</h1>
+        <h1>Do Beat ao Bit</h1>
         <p>
           A música digital representa uma das maiores transformações tecnológicas da história do som.
           Ao converter sinais analógicos em dados numéricos, tornou-se possível armazenar, processar e
@@ -40,12 +40,16 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <div className="orbital">
-          <RadioTower />
-          {Array.from({ length: 84 }).map((_, index) => (
-            <span key={index} style={{ '--i': index }} />
-          ))}
-        </div>
+        <div className="orbital relative flex items-center justify-center w-64 h-64">
+  <RadioTower className="z-10 w-12 h-12 text-pink-500" />
+  {Array.from({ length: 84 }).map((_, index) => (
+    <span 
+      key={index} 
+      style={{ '--i': index }} 
+      className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-1/2 origin-bottom bg-gradient-to-t from-pink-500 to-transparent opacity-50" 
+    />
+  ))}
+</div>
       </motion.div>
     </section>
   )
